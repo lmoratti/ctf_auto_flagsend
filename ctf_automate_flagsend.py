@@ -5,7 +5,6 @@ import os
 # Configuration
 URL            = "https://redteamassociation.com/submit"  
 TEAM_TOKEN     = "your_team_token_here"  
-TEAM_TOKEN     = "eyJ0ZWFtX25hbWUiOiJ0ZWFtMSJ9.ZiVokA.dBZc8l2vWzFfOnjrmg_D-_LlQQY"
 HEADERS        = {"Cookie": f"session={TEAM_TOKEN}"}
 SLEEP_INTERVAL = 55
 
@@ -17,7 +16,7 @@ No value in FLAG_{flag_number} in environment variable.
 	Use "export FLAG_{flag_number}='flag' "
 	You may wish to also use a script to automate your exploits and set that variable.
 	Flags refresh every minute to reward persistence on other teams.
-	""") 
+	\033[0m""") 
         return
 
     data     = {'flag': flag_data}
