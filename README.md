@@ -9,12 +9,12 @@ To run:
 ![example.png](example.png)
 
 
-##Syntax of env variables:
+## Syntax of env variables:
 `TEAM{number}_FLAG{number}` e.g. `TEAM1_FLAG1`
 You'll want to update `update_env.sh` to have an echo statement with "TEAM1_FLAG1=RTA{flag}" or to run a subscript similar to the examples provided. 
 
 
-##Options:
+## Options:
 * --submit_url 
   * [OPTIONAL] Change the submission URL. Default "https://redteamassociation.com/submit"
 * -token 
