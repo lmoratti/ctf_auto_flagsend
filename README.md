@@ -16,17 +16,17 @@ You'll want to update `update_env.sh` to have an echo statement with "TEAM1_FLAG
 
 ##Options:
 * --submit_url 
-** [OPTIONAL] Change the submission URL. Default "https://redteamassociation.com/submit"
+  * [OPTIONAL] Change the submission URL. Default "https://redteamassociation.com/submit"
 * -token 
-** The session token to submit. You can find the token here after logging in.
+  * [REQUIRED] The session token to submit. You can find the token here after logging in.
 ![token.png](token.png)
-** --sleep
-** The sleep interval to use. Default is 55 secs.')
+* --sleep
+  * [OPTIONAL] The sleep interval to use. Default is 55 secs.')
 * --number_of_teams
-** Number of teams participating. Default 6.')
+  * [OPTIONAL] Number of teams participating. Default 6.')
 * --flags_per_team
-** Flags per team. Default 4.')
+  * [OPTIONAL] Flags per team. Default 4.')
 * --env_updater_script
-** Path to a script to update environment variables with flags.
+  * [OPTIONAL] Path to a script to update environment variables with flags.
 
 
