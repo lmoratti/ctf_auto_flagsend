@@ -5,7 +5,7 @@ import os
 import subprocess
 import argparse
 
-parser = argparse.ArgumentParser(description='A helper script to automate sending the flags to the server. The script reads from environment variables. They are sent every 1 minute. You probably want to use other bash scripts or python scripts to automate setting those variables. Environment variable should be similar to TEAM1_FLAG1.\nUsage: export TOKEN={Session_Cookie_Value_From_RTA_Website} \n Python3 ctf_automate_flagsend -t $TOKEN')
+parser = argparse.ArgumentParser(description='A helper script to automate sending the flags to the server. The script reads from environment variables. They are sent every 1 minute. You probably want to use other bash scripts or python scripts to automate setting those variables. Environment variable should be similar to TEAM1_FLAG1.\nUsage: export TOKEN={Session_Cookie_Value_From_RTA_Website} \n Python3 ctf_automate_flagsend.py -t $TOKEN &')
 
 parser.add_argument('--submit_url', metavar='u', type=str, default="https://redteamassociation.com/submit", 
                             help='The submission URL. Default "https://redteamassociation.com/submit"')
