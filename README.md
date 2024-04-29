@@ -27,6 +27,6 @@ You'll want to update `update_env.sh` to have an echo statement with "TEAM1_FLAG
 * --flags_per_team
   * [OPTIONAL] Flags per team. Default 4.')
 * --env_updater_script
-  * [OPTIONAL] Path to a script to update environment variables with flags.
+  * [OPTIONAL] Path to a script to that will echo the flags with one flag per line in the format of TEAM1_FLAG1=RTA{123-123-123}.
 
 

@@ -74,7 +74,7 @@ def main():
     while True:
         try:
             #Run the updater script and capture the output
-            output = subprocess.check_output(f"bash {UPDATER_SCRIPT} && env", shell=True, text=True)
+            output = subprocess.check_output(f"bash {UPDATER_SCRIPT}", shell=True, text=True)
 
             # Parse the output to update the environment variables
             env_updates = dict(line.split("=", 1) for line in output.splitlines() if 'FLAG' in line)
@@ -86,7 +86,7 @@ def main():
 
         for team in teams:
             team.send_flags()
-        print(f"{time.strftime("%H:%M:%S", time.localtime())}: Sleeping for {SLEEP_INTERVAL} seconds.")
+        print(f"{time.strftime('%H:%M:%S', time.localtime())}: Sleeping for {SLEEP_INTERVAL} seconds.")
         time.sleep(SLEEP_INTERVAL)
 
 if __name__ == "__main__":
